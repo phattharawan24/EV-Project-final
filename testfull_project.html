@@ -5,10 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EVCAR รถพลังงานไฟฟ้าที่ทุกคนสามารถเข้าถึงได้</title>
     <script src="calculate_java.js"></script>
     <script src="app.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BXB2TLMSZD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BXB2TLMSZD');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NRRGDQ4');</script>
+    <!-- End Google Tag Manager -->
+
 </head>
+
+
 <style>    
     
     @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600&display=swap');
@@ -36,6 +58,7 @@
         }
         .topnav .logo{
             font-size: 25px;
+            margin-top: -30px;
             color: #206a5d;
             -webkit-text-stroke: 1px darkslategrey;
         }
@@ -221,7 +244,7 @@
                             5. สถานีอัดประจุไฟฟ้า EA Anywhere หรือ บ.พลังงานบริสุทธิ์ <br><br>
     
                             สามารถดูรายละเอียดสถานที่ให้บริการได้จากเว็บไซต์นี้ได้เลย <br><br><a
-                                href="https://travel.trueid.net/detail/Y6egna82V3zG" class="linktoweb">Go to Website</a>
+                                href="https://travel.trueid.net/detail/Y6egna82V3zG" class="linktoweb" id="gotowebsite">Go to Website</a>
                         </p>
     
                     </div>
@@ -434,7 +457,7 @@
                 </div>
             </div>
             <p style="text-align: center;">&nbsp;<input type="submit" value="calculate" onclick="calculate()"
-                    class="button1 sub"></p>
+                    class="button1 sub" id="calculate"></p>
             <h3 style="text-align: center">"คุณจะเสียเงิน <input type="text" disabled name="" id="hour"
                     class="button4"> บาท
                 <br> และ รถสามารถวิ่งได้ <input type="text" name="drive" id="drive" disabled class="button4"> km"
@@ -450,7 +473,6 @@
                 alt="PPKInt.png" border="0" class="carrun">
         </div><br><br><br>
         <div class="road"></div>
-        <link rel="shortcut icon" type="image/jpg" href="logo.png">
             <div class="title" >
                 <div class="cardbox" id="game">
                     <div class="textcardbox">

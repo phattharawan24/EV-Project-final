@@ -73,7 +73,7 @@ function flipcard() {
     let cardID = parseInt(this.getAttribute('id'));
     this.setAttribute('src',cardArray[cardID].image);
     cardChoosen.push(cardArray[cardID]);
-    cardChoosenID.push(cardID+5);
+    cardChoosenID.push(cardID+6);
     if(cardChoosen.length === 2) {
         document.getElementById('gameConsole').textContent = 'ไหนดูสิ ใช่หรือเปล่านะ...';
         setTimeout(checkForMatch,1000);
@@ -92,6 +92,8 @@ function checkForMatch() {
     if(cardChoosen[0].name === cardChoosen[1].name) {
         cards[selectedCardOne].setAttribute('src','correct.png');
         cards[selectedCardTwo].setAttribute('src','correct.png');
+        cards[selectedCardOne].removeEventListener('click',flipcard);
+        cards[selectedCardTwo].removeEventListener('click',flipcard);
         score = score+1;
         consoleMessage = 'คุณจับคู่หัวชาร์จได้ถูกต้อง'
     }else{
